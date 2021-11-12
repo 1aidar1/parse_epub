@@ -1,0 +1,853 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("assets/PT_Sans-Web-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 100;
+  src: url("assets/PT_Sans-Web-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("assets/PT_Sans-Web-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 200;
+  src: url("assets/PT_Sans-Web-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("assets/PT_Sans-Web-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url("assets/PT_Sans-Web-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/PT_Sans-Web-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("assets/PT_Sans-Web-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/PT_Sans-Web-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url("assets/PT_Sans-Web-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/PT_Sans-Web-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url("assets/PT_Sans-Web-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/PT_Sans-Web-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("assets/PT_Sans-Web-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("assets/PT_Sans-Web-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: url("assets/PT_Sans-Web-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 900;
+  src: url("assets/PT_Sans-Web-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 900;
+  src: url("assets/PT_Sans-Web-BoldItalic.ttf") format("truetype");
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+a {
+  background: transparent;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+sub {
+  font-size: small;
+  vertical-align: sub;
+}
+
+sup {
+  font-size: small;
+  vertical-align: super;
+}
+
+.Italic {
+  font-style: italic;
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.Strikethrough {
+  text-decoration: line-through;
+}
+
+.Underline {
+  text-decoration: underline;
+}
+
+.Subscript {
+  font-size: 0.63em;
+  vertical-align: sub;
+}
+
+.Superscript {
+  font-size: 0.63em;
+  position: relative;
+  top: 0.1em;
+  vertical-align: super;
+}
+
+.Nowrap {
+  white-space: nowrap;
+}
+
+.visual__no-break-inside {
+  page-break-inside: avoid;
+}
+
+.visual__nowrap {
+  white-space: nowrap !important;
+}
+
+.H1 {
+  break-inside: avoid;
+  -epub-hyphens: manual;
+  hyphens: manual;
+  page-break-inside: avoid;
+}
+
+.H2 {
+  break-after: avoid;
+  break-before: auto;
+  -epub-hyphens: manual;
+  hyphens: manual;
+  page-break-after: avoid;
+  page-break-before: auto;
+}
+
+.H3 {
+  break-after: avoid;
+  break-before: auto;
+  break-inside: avoid;
+  -epub-hyphens: manual;
+  hyphens: manual;
+  page-break-after: avoid;
+  page-break-before: auto;
+  page-break-inside: avoid;
+}
+
+.Subheader {
+  break-before: avoid;
+  break-inside: avoid;
+  -epub-hyphens: auto;
+  hyphens: auto;
+  page-break-before: avoid;
+  page-break-inside: avoid;
+}
+
+.Subheader.prev-H2 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.Subheader.prev-H3 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.Main {
+  -epub-hyphens: auto;
+  hyphens: auto;
+}
+
+.Epigraph {
+  break-inside: avoid;
+  -epub-hyphens: manual;
+  hyphens: manual;
+  page-break-inside: avoid;
+}
+
+.Epigraph.prev-H3 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.Lyrics {
+  break-inside: avoid;
+  -epub-hyphens: manual;
+  hyphens: manual;
+  page-break-inside: avoid;
+}
+
+.Quote {
+  -epub-hyphens: auto;
+  hyphens: auto;
+}
+
+.Date {
+  break-before: avoid;
+  break-inside: avoid;
+  -epub-hyphens: manual;
+  hyphens: manual;
+  page-break-before: avoid;
+  page-break-inside: avoid;
+}
+
+.Main.prev-Figure,
+.Epigraph.prev-Figure,
+.Lyrics.prev-Figure,
+.Quote.prev-Figure,
+.prev-Subheader,
+.prev-H3 {
+  orphans: 3 !important;
+}
+
+.Figure {
+  box-sizing: border-box;
+  break-inside: avoid;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  page-break-inside: avoid;
+  text-align: center;
+}
+
+.Figure > img {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.Figcaption {
+  box-sizing: border-box;
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1em;
+  max-width: 100%;
+  padding-bottom: 1.11111111em;
+  text-align: center;
+}
+
+header {
+  break-after: avoid;
+  break-inside: avoid;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+}
+
+h1.H1 {
+  -epub-hyphens: auto;
+  hyphens: auto;
+}
+
+h2.H2 {
+  -epub-hyphens: auto;
+  hyphens: auto;
+}
+
+h3.H3 {
+  -epub-hyphens: auto;
+  hyphens: auto;
+}
+
+.epub__rights-page {
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.epub__rights-page__licenses {
+  margin-bottom: 1em;
+}
+
+.epub__rights-page__contributor-role {
+  font-style: italic;
+}
+
+.epub__rights-page__annotation {
+  font-size: 0.88888889em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  text-align: justify;
+}
+
+.epub__rights-page__raiting {
+  margin-top: 14pt;
+}
+
+.epub__rights-page__raiting-number {
+  border: 0.5pt solid black;
+  border-radius: 0.35cm;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 9pt;
+  height: 0.7cm;
+  padding-bottom: 0.2cm;
+  padding-top: 0.1cm;
+  text-align: center;
+  vertical-align: middle;
+  width: 0.7cm;
+}
+
+.Figure {
+  margin: 1em 0;
+  max-height: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.Figure figcaption {
+  text-align: center;
+}
+
+.Figure img {
+  display: block;
+  margin: 0 auto;
+  max-height: 80%;
+  max-width: 100%;
+}
+
+.LinkExt {
+  color: #00e;
+  text-decoration: underline;
+}
+
+.epub__toc__ol {
+  list-style-type: none;
+}
+
+.epub__toc__ol .epub__toc__ol {
+  margin-left: 1.5em;
+}
+
+.epub__toc__ol .epub__toc__li {
+  display: list-item;
+}
+
+.epub__toc__ol .epub__toc__a {
+  display: block;
+}
+
+.ridero__noteref {
+  border-bottom: 1px dashed #333;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: baseline;
+  white-space: normal;
+}
+
+.epub__cover-page__wrapper {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.epub__cover-page__img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+body {
+  font-family: "PT Sans";
+  font-size: 1em;
+  line-height: 1.3;
+}
+
+.H1 {
+  font-family: "PT Sans";
+  font-size: 2.3em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.Subheader.prev-H1 {
+  font-family: "PT Sans";
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-left: 1.431496em;
+  margin-right: 1.431496em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.H2 {
+  font-family: "PT Sans";
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.1ex;
+  line-height: 1.1;
+  margin-bottom: 1em;
+  margin-left: 1.226997em;
+  margin-right: 3.885489em;
+  margin-top: 3em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.Subheader.prev-H2 {
+  font-family: "PT Sans";
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 1em;
+  margin-left: 1.431496em;
+  margin-right: 4.771654em;
+  margin-top: -1em;
+  text-align: left;
+}
+
+.H3 {
+  font-family: "PT Sans";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.1ex;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  margin-left: 1.717795em;
+  margin-right: 5.439685em;
+  margin-top: 2em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.Subheader.prev-H3 {
+  font-family: "PT Sans";
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 1.4em;
+  margin-left: 2.147244em;
+  margin-right: 7.15748em;
+  margin-top: -1.2em;
+  text-align: left;
+}
+
+.Main {
+  font-family: "PT Sans";
+  font-size: 1em;
+  line-height: 1.3;
+  text-align: justify;
+  text-indent: 1.717795em;
+}
+
+.Epigraph {
+  font-family: "PT Sans";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3;
+  margin-left: 30%;
+  text-align: left;
+  text-indent: 0;
+}
+
+.Quote {
+  border-left-color: black;
+  border-left-style: solid;
+  border-left-width: 1.333333px;
+  font-family: "PT Sans";
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.35;
+  margin-left: 2.147244em;
+  margin-right: 2.147244em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-align: justify;
+}
+
+.Lyrics {
+  font-family: "PT Sans";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.25;
+  margin-left: 4.294488em;
+  margin-right: 2.862992em;
+  text-align: left;
+  text-indent: -1.431496em;
+}
+
+.Date {
+  font-family: "PT Sans";
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.25;
+  margin-left: 30%;
+  margin-right: 10%;
+  text-align: right;
+}
+
+.Figcaption {
+  text-align: center;
+}
+
+.Epigraph.first {
+  margin-top: 1em;
+}
+
+.Epigraph.last {
+  margin-bottom: 2em;
+}
+
+.Epigraph.last.next-Date {
+  margin-bottom: 0em;
+}
+
+.Quote.first {
+  margin-top: 1em;
+}
+
+.Quote.last {
+  margin-bottom: 1em;
+}
+
+.Quote.last.next-Date {
+  margin-bottom: 0em;
+}
+
+.Lyrics.first {
+  margin-top: 1em;
+}
+
+.Lyrics.last {
+  margin-bottom: 1em;
+}
+
+.Lyrics.last.next-Date {
+  margin-bottom: 0em;
+}
+
+.Date.first {
+  margin-top: 0em;
+}
+
+.Date.first.prev-Epigraph {
+  margin-top: 0em;
+}
+
+.Date.first.prev-Lyrics {
+  margin-top: 0em;
+}
+
+.Date.first.prev-Quote {
+  margin-top: 0em;
+}
+
+.Date.last {
+  margin-bottom: 1em;
+}
+
+.epub__title-page__authors {
+  font-family: "PT Sans";
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.3;
+  margin-bottom: 6.16063em;
+  margin-top: 6.16063em;
+  text-align: center;
+}
+
+.epub__title-page__title {
+  font-family: "PT Sans";
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 2.772283em;
+  text-align: center;
+}
+
+.epub__title-page__subtitle {
+  font-family: "PT Sans";
+  font-size: 1.5em;
+  font-style: normal;
+  line-height: 1.1;
+  margin-top: 1.540157em;
+  text-align: center;
+}
+
+@media amzn-mobi {
+  p {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .Subscript {
+    font-size: 0.63em;
+    line-height: 1em;
+    vertical-align: sub;
+  }
+
+  .Superscript {
+    font-size: 0.63em;
+    line-height: 1em;
+    vertical-align: super;
+  }
+}
+
+@media amzn-kf8 {
+  .Subscript {
+    font-size: 0.63em;
+    line-height: 1em;
+    vertical-align: sub;
+  }
+
+  .Superscript {
+    font-size: 0.63em;
+    line-height: 1em;
+    vertical-align: super;
+  }
+}

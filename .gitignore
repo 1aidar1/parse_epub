@@ -1,0 +1,8 @@
+*.html
+*.json
+*.zip
+*.epub
+*.xhtml
+*.jpg
+*.jpeg
+/venv
